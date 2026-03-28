@@ -10,6 +10,7 @@ import { FaqComponent } from './client/faq/faq.component';
 import { GalerieComponent } from './client/galerie/galerie.component';
 import { FormationsComponent } from './client/formations/formations.component';
 import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './client/about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     FaqComponent,
     GalerieComponent,
-    FormationsComponent
+    FormationsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ClientComponent } from './client/client/client.component';
 import { AccueilComponent } from './client/accueil/accueil.component';
 import { FormationsComponent } from './client/formations/formations.component';
+import { AboutComponent } from './client/about/about.component';
 
 const routes: Routes = [
   {path:'',  redirectTo: 'academy', pathMatch: 'full'},
@@ -10,7 +11,8 @@ const routes: Routes = [
     children:[
       {path:"", redirectTo: 'accueil', pathMatch: 'full'},
       {path:'accueil', component: AccueilComponent},
-      {path:'nos-formations', component: FormationsComponent}
+      {path:'nos-formations', component: FormationsComponent},
+      {path:'a-propos', component: AboutComponent}
     ]
   }
 ];
