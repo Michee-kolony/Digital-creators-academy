@@ -8,6 +8,8 @@ import { ClientComponent } from './client/client/client.component';
 import { NavbarComponent } from './client/navbar/navbar.component';
 import { FaqComponent } from './client/faq/faq.component';
 import { GalerieComponent } from './client/galerie/galerie.component';
+import { FormationsComponent } from './client/formations/formations.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { GalerieComponent } from './client/galerie/galerie.component';
     ClientComponent,
     NavbarComponent,
     FaqComponent,
-    GalerieComponent
+    GalerieComponent,
+    FormationsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
