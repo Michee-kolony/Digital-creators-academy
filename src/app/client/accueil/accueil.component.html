@@ -374,32 +374,58 @@
 
 
 
-
-<!-- 🔥 MODAL VIDEO -->
+<!-- 🔥 MODAL VIDEO - DESIGN AMÉLIORÉ -->
 <div *ngIf="isVideoOpen" 
      (click)="closeVideo()"
-     class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm px-4">
+     class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md px-4 transition-all duration-300 animate-fadeIn">
 
-  <!-- CONTENU -->
-  <div class="relative w-full max-w-4xl" (click)="$event.stopPropagation()">
+  <!-- CONTENU AVEC ANIMATION -->
+  <div class="relative w-full max-w-5xl mx-4 transform transition-all duration-300 animate-scaleIn" 
+       (click)="$event.stopPropagation()">
 
-    <!-- CLOSE -->
+    <!-- BOUTON CLOSE MODERNE -->
     <button (click)="closeVideo()" 
-      class="absolute -top-12 right-0 text-white text-3xl hover:text-[#AB9364]">
-      ✕
+      class="absolute -top-12 right-0 md:-right-12 md:top-0 text-white/80 hover:text-white text-2xl md:text-3xl transition-all duration-300 hover:scale-110 hover:rotate-90 z-10"
+      aria-label="Fermer la vidéo">
+      <svg class="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
     </button>
 
-    <!-- VIDEO -->
-    <div class="relative w-full pb-[56.25%] rounded-xl overflow-hidden shadow-2xl">
-      <video
-    class="absolute top-0 left-0 w-full h-full object-cover"
-    src="images/jeny.MP4"
-    controls
-    playsinline
-    preload="metadata"
-    poster="images/thumbnail"
-  ></video>
-
+    <!-- CONTAINER VIDEO AVEC EFFET MODERNE -->
+    <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/50 bg-black/20 backdrop-blur-sm">
+      
+      <!-- BORDURE DÉCORATIVE -->
+      <div class="absolute inset-0 rounded-2xl border border-white/20 pointer-events-none z-10"></div>
+      
+      <!-- OVERLAY GRADIENT -->
+      <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none z-10"></div>
+      
+      <!-- LECTEUR VIDEO RESPONSIVE -->
+      <div class="relative w-full" style="padding-bottom: 56.25%">
+        <iframe 
+          class="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/4aJkG8vvUJw?autoplay=1&rel=0&modestbranding=1&showinfo=0"
+          title="L'expérience après l'apprentissage"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+      
+      <!-- INFO BARRE OPTIONNELLE -->
+      <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 z-20">
+        <p class="text-white text-sm md:text-base font-medium">
+          🎬 L'expérience après l'apprentissage
+        </p>
+      </div>
+      
+    </div>
+    
+    <!-- INDICATEUR OPTIONNEL -->
+    <div class="text-center mt-6 text-white/60 text-sm animate-fadeInUp">
+      Appuyez sur Échap pour fermer
     </div>
 
   </div>
