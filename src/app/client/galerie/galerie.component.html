@@ -1,0 +1,22 @@
+<div class="gallery-container py-32">
+
+  <!-- 🔘 FILTRES ARRONDIS -->
+  <div class="filters">
+    <button (click)="setFilter('all')" [class.active]="selectedFilter === 'all'">Tous</button>
+    <button (click)="setFilter('formation')" [class.active]="selectedFilter === 'formation'">Formation</button>
+    <button (click)="setFilter('diplome')" [class.active]="selectedFilter === 'diplome'">Diplôme</button>
+    <button (click)="setFilter('formateur')" [class.active]="selectedFilter === 'formateur'">Formateur</button>
+    <button (click)="setFilter('equipe')" [class.active]="selectedFilter === 'equipe'">Équipe</button>
+  </div>
+
+  <!-- 🖼️ GRILLE MODERNE -->
+  <div class="grid">
+    <img
+      *ngFor="let img of filteredImages"
+      [src]="img.src"
+      class="grid-item"
+      loading="lazy"
+    />
+  </div>
+
+</div>

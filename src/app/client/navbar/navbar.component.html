@@ -1,0 +1,64 @@
+<!-- NAVBAR -->
+<nav 
+  [ngClass]="{
+    'bg-transparent': !isScrolled,
+    'bg-blue-900 shadow-lg': isScrolled
+  }"
+  class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+
+  <div class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
+
+    <!-- LOGO -->
+    <div class="text-white text-xl font-bold flex cursor-pointer" routerLink="/">
+      <img  src="images/DCA Lacoste Logo-01.png" class="w-[190px]"/>
+    </div>
+
+    <!-- MENU DESKTOP -->
+    <ul class="hidden md:flex space-x-8 text-white font-medium">
+      <li><a href="#" class="hover:text-blue-300 transition text-decoration-none text-white">Accueil</a></li>
+      <li><a href="#" class="hover:text-blue-300 transition  text-decoration-none text-white">Formations</a></li>
+      <li><a href="#" class="hover:text-blue-300 transition  text-decoration-none text-white">Services</a></li>
+      <li><a href="#" class="hover:text-blue-300 transition  text-decoration-none text-white">Contact</a></li>
+    </ul>
+
+    <!-- MENU BUTTON MOBILE -->
+    <button 
+      (click)="toggleMenu()"
+      class="md:hidden text-white focus:outline-none">
+
+      <!-- ICON -->
+       <i *ngIf="!isMenuOpen" class="fa-solid fa-bars text-white text-[26px]"></i>
+     <i *ngIf="isMenuOpen" class="fa-solid fa-xmark"></i>
+
+    </button>
+  </div>
+</nav>
+
+<!-- SIDEBAR MOBILE -->
+<div 
+  [ngClass]="{
+    'translate-x-0': isMenuOpen,
+    '-translate-x-full': !isMenuOpen
+  }"
+  class="fixed top-0 left-0 h-full w-64 bg-blue-900 text-white transform transition-transform duration-300 z-50 shadow-xl md:hidden">
+
+  <div class="p-6 space-y-6">
+
+    <h2 class="text-xl font-bold">Menu</h2>
+
+    <ul class="space-y-4">
+      <li><a href="#" (click)="closeMenu()" class="block hover:text-blue-300">Accueil</a></li>
+      <li><a href="#" (click)="closeMenu()" class="block hover:text-blue-300">Formations</a></li>
+      <li><a href="#" (click)="closeMenu()" class="block hover:text-blue-300">Services</a></li>
+      <li><a href="#" (click)="closeMenu()" class="block hover:text-blue-300">Contact</a></li>
+    </ul>
+
+  </div>
+</div>
+
+<!-- OVERLAY -->
+<div 
+  *ngIf="isMenuOpen"
+  (click)="closeMenu()"
+  class="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden">
+</div>

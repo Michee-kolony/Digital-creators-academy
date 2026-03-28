@@ -1,0 +1,409 @@
+<div class="overflow-hidden">
+  <div id="carouselExampleIndicators" class="carousel carousel-fade relative" data-bs-ride="carousel">
+  <!-- Indicateurs -->
+  <div class="carousel-indicators absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-20">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active w-8 h-2 rounded-full bg-white/50 transition-all duration-300" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="w-8 h-2 rounded-full bg-white/50 transition-all duration-300" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="w-8 h-2 rounded-full bg-white/50 transition-all duration-300" aria-label="Slide 3"></button>
+  </div>
+  
+  <div class="carousel-inner relative w-full overflow-hidden">
+    <!-- Slide 1 - Étudiants en classe avec GIF animé -->
+    <div class="carousel-item active relative float-left w-full transition-transform duration-600 ease-in-out">
+      <img src="images/charis.gif" class="block w-full h-screen object-cover" alt="Étudiants en classe travaillant ensemble">
+      <!-- Overlay bleu opacity-50 -->
+      <div class="absolute inset-0 bg-[#1B4289]/80 z-10"></div>
+      <!-- Texte d'accompagnement -->
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <div class="text-center text-white px-4 max-w-3xl mx-auto animate-fadeInUp">
+          <h3 class="text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg">Le club des créateurs digital</h3>
+          <p class="text-base md:text-xl mb-6 drop-shadow-md">Découvrez nos étudiants en pleine séance de travail collaboratif. L'énergie de groupe stimule la créativité et la réussite !</p>
+          <button class="px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300 hover:scale-105">En savoir plus</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Slide 3 - Diversité et réussite avec GIF animé -->
+    <div class="carousel-item relative float-left w-full transition-transform duration-600 ease-in-out">
+      <img src="images/DSC_6471.jpg.jpeg" class="block w-full h-screen object-cover" alt="Étudiants multiculturels en classe">
+      <!-- Overlay bleu opacity-50 -->
+      <div class="absolute inset-0 bg-[#1B4289]/80 z-10"></div>
+      <!-- Texte d'accompagnement -->
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <div class="text-center text-white px-4 max-w-3xl mx-auto animate-fadeInUp">
+          <h3 class="text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg">Communauté Inclusive</h3>
+          <p class="text-base md:text-xl mb-6 drop-shadow-md">Rejoignez un environnement d'apprentissage dynamique et inclusif où chaque étudiant peut s'épanouir pleinement.</p>
+          <button class="px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300 hover:scale-105">Inscription ouverte</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="bg-[#1B4289] relative pt-32 pb-20">
+  <!-- Container pour les cards - positionnées au-dessus de la section -->
+  <div class="container mx-auto px-4 relative z-10 -mt-48">
+    <div class="grid grid-cols-1  lg:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="bg-[#2B57A6] rounded-2xl shadow-2xl p-8 text-center hover:shadow-3xl transition-all duration-300 hover:-translate-y-2">
+        <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-10 h-10 text-[#1B4289]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3">Excellence Académique</h3>
+        <p class="text-gray-200 leading-relaxed">Une formation de qualité supérieure dispensée par des experts reconnus dans leur domaine.</p>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="bg-[#AB9364] rounded-2xl shadow-2xl p-8 text-center hover:shadow-3xl transition-all duration-300 hover:-translate-y-2">
+        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-10 h-10 text-[#1B4289]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3">Communauté Inclusive</h3>
+        <p class="text-gray-300 leading-relaxed">Un environnement accueillant où chaque étudiant trouve sa place et s'épanouit.</p>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="bg-white rounded-2xl shadow-2xl p-8 text-center hover:shadow-3xl transition-all duration-300 hover:-translate-y-2">
+        <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-10 h-10 text-[#1B4289]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Innovation Continue</h3>
+        <p class="text-gray-600 leading-relaxed">Des méthodes pédagogiques modernes et des technologies de pointe pour former les leaders de demain.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-[#1B4289] py-20">
+  <div class="container mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- gauche - Présentation de Creators Digital -->
+      <div class="text-white space-y-6">
+        <!-- Logo ou icône -->
+        <div class="inline-block bg-white/10 backdrop-blur-sm rounded-2xl px-4 py-2 mb-4">
+          <span class="text-[#AB9364] font-bold text-lg">Creators Digital</span>
+        </div>
+        
+        <!-- Titre principal -->
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+          Façonnons ensemble
+          <span class="text-[#AB9364] block mt-2">les créateurs de demain</span>
+        </h2>
+        
+        <!-- Description -->
+        <div class="space-y-4 text-gray-200 text-lg leading-relaxed">
+          <p>
+            <span class="font-bold text-white">Creators Digital</span> est bien plus qu'une école de formation. Nous sommes un écosystème 
+            innovant dédié à former la prochaine génération de talents numériques.
+          </p>
+          <p>
+            Avec une approche pédagogique unique mêlant expertise technique et développement personnel, 
+            nous accompagnons chaque étudiant dans la réalisation de ses ambitions créatives.
+          </p>
+          <p>
+            Notre mission : <span class="text-[#AB9364] font-semibold">révéler les potentiels, cultiver l'excellence et bâtir un avenir numérique inclusif</span>.
+          </p>
+        </div>
+        
+        <!-- Points clés -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-[#AB9364]/20 rounded-full flex items-center justify-center">
+              <svg class="w-5 h-5 text-[#AB9364]" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <span>+500 étudiants formés</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-[#AB9364]/20 rounded-full flex items-center justify-center">
+              <svg class="w-5 h-5 text-[#AB9364]" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <span>95% de taux de satisfaction</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-[#AB9364]/20 rounded-full flex items-center justify-center">
+              <svg class="w-5 h-5 text-[#AB9364]" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <span>+20 experts passionnés</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-[#AB9364]/20 rounded-full flex items-center justify-center">
+              <svg class="w-5 h-5 text-[#AB9364]" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <span>100% accompagnement personnalisé</span>
+          </div>
+        </div>
+        
+        <!-- Bouton d'action -->
+        <div class="pt-6">
+          <button class="group relative px-8 py-4 bg-[#AB9364] text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+            <span class="relative z-10">Découvrir nos programmes</span>
+            <div class="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+          </button>
+        </div>
+      </div>
+
+<!-- Droite - Photo d'étudiant sans background -->
+<div class="relative flex justify-center">
+  <div class="relative group w-full max-w-2xl">
+    <!-- Cercle décoratif en arrière-plan plus grand -->
+    <div class="absolute -inset-8 bg-gradient-to-r from-[#AB9364] to-[#2B57A6] rounded-full blur-3xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+    
+    <!-- Conteneur de l'image -->
+    <div class="relative">
+      <!-- Image de l'étudiant (sans background - PNG avec transparence) - AGRANDIE -->
+      <img src="images/portrait-astronaut-space-suit-with-laptop.png" 
+           alt="Étudiant Creators Digital" 
+           class="relative w-full h-auto max-w-full mx-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+           style="filter: drop-shadow(0 25px 35px rgba(0,0,0,0.3));">
+      
+      <!-- Badge Future Star - au milieu en bas de l'image pour couvrir les imperfections -->
+      <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 z-20 bg-white text-[#1B4289] px-6 py-3 rounded-full text-base font-semibold shadow-xl hover:scale-110 transition-transform duration-300 whitespace-nowrap">
+        <i class="fa fa-star text-yellow-500"></i> Future Star de demain es-tu prête ?
+      </div>
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="relative bg-white py-20">
+  
+  <svg class="absolute -top-[13%] md:-top-[20%] lg:-top-[30%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,192L48,202.7C96,213,192,235,288,240C384,245,480,235,576,218.7C672,203,768,181,864,149.3C960,117,1056,75,1152,80C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+  <!-- Background textures -->
+  <div class="absolute inset-0 opacity-10 z-0">
+    <div class="absolute inset-0 bg-[radial-gradient(#1B4289_1px,transparent_1px)] [background-size:24px_24px]"></div>
+    <div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_35px,rgba(27,66,137,0.1)_35px,rgba(27,66,137,0.1)_70px)]"></div>
+    <div class="absolute -top-40 -right-40 w-80 h-80 bg-[#AB9364]/5 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-[#1B4289]/5 rounded-full blur-3xl"></div>
+  </div>6
+  <div class="container mx-auto px-4 relative z-10">
+    
+    <!-- TITRE -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1B4289] mb-4">
+        DÉCOUVREZ LE PARCOURS DE JENNY
+      </h2>
+      <p class="text-xl text-[#AB9364] font-semibold">
+        AVEC CREATOR DIGITAL ACADEMI
+      </p>
+      <div class="w-24 h-1 bg-[#AB9364] mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    <!-- VIDEO CARD -->
+    <div class="max-w-4xl mx-auto relative group">
+
+      <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+
+        <!-- Thumbnail -->
+        <img 
+          src="images/IMG_6560.PNG" 
+          class="w-full h-auto object-cover transition-all duration-500 group-hover:scale-105">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30"></div>
+
+        <!-- PLAY BUTTON -->
+        <button (click)="openVideo()" 
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 animate-pulse hover:scale-110">
+          
+          <div class="bg-[#AB9364] rounded-full p-2 md:p-6 shadow-2xl">
+            <svg class="w-12 h-12 md:w-16 md:h-16 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+
+        </button>
+
+        <!-- Badge -->
+        <div class="absolute top-4 right-4 bg-black/70 text-white px-3 py-1 rounded-full text-sm">
+          🎬 Témoignage exclusif
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- TEXT -->
+    <div class="text-center mt-8 max-w-3xl mx-auto">
+      <p class="text-gray-600 text-lg">
+        Jenny a transformé sa passion en carrière grâce à Creator Digital Academi.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="relative py-20 md:py-28 overflow-hidden">
+  
+  <!-- BACKGROUND -->
+  <div class="absolute inset-0 z-0">
+    <img src="images/DSC_5882.jpg.jpeg" 
+         class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/50"></div>
+  </div>
+
+  <div class="absolute inset-0 z-1 bg-[#1B4289]/50"></div>
+
+  <!-- CONTAINER LARGE -->
+  <div class="container mx-auto px-4 relative z-10">
+    
+    <!-- LARGE WIDTH -->
+    <div class="max-w-6xl mx-auto">
+
+      <!-- TITLE -->
+      <div class="text-center mb-10">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+          S'inscrire à nos programmes
+        </h2>
+        <div class="w-24 h-1 bg-[#AB9364] mx-auto rounded-full"></div>
+        <p class="text-gray-200 mt-4">
+          Rejoignez Creator Digital et transformez votre passion en carrière
+        </p>
+      </div>
+
+      <!-- FORM -->
+      <form class="bg-white/10 backdrop-blur-md rounded-2xl p-6 md:p-10 shadow-2xl border border-white/20">
+        
+        <!-- GRID 2 COLONNES -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- NOM -->
+          <div>
+            <label class="block text-white text-sm font-semibold mb-2">
+              Nom complet <span class="text-[#AB9364]">*</span>
+            </label>
+            <input type="text"
+              class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:border-[#AB9364] focus:ring-2 focus:ring-[#AB9364]/50 outline-none"
+              placeholder="Jean Dupont">
+          </div>
+
+          <!-- EMAIL -->
+          <div>
+            <label class="block text-white text-sm font-semibold mb-2">
+              Email <span class="text-[#AB9364]">*</span>
+            </label>
+            <input type="email"
+              class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:border-[#AB9364] focus:ring-2 focus:ring-[#AB9364]/50 outline-none"
+              placeholder="email@gmail.com">
+          </div>
+
+          <!-- TELEPHONE -->
+          <div>
+            <label class="block text-white text-sm font-semibold mb-2">
+              Téléphone <span class="text-[#AB9364]">*</span>
+            </label>
+            <input type="tel"
+              class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:border-[#AB9364] focus:ring-2 focus:ring-[#AB9364]/50 outline-none"
+              placeholder="+243 ...">
+          </div>
+
+          <!-- FORMATION -->
+          <div>
+            <label class="block text-white text-sm font-semibold mb-2">
+              Formation <span class="text-[#AB9364]">*</span>
+            </label>
+            <select
+              class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:border-[#AB9364] focus:ring-2 focus:ring-[#AB9364]/50 outline-none">
+              
+              <option class="text-black">Choisir une formation</option>
+              <option class="text-black">Développement Web</option>
+              <option class="text-black">Marketing Digital</option>
+              <option class="text-black">Design UI/UX</option>
+              <option class="text-black">Montage Vidéo</option>
+
+            </select>
+          </div>
+
+        </div>
+
+        <!-- MESSAGE FULL WIDTH -->
+        <div class="mt-6">
+          <label class="block text-white text-sm font-semibold mb-2">
+            Message
+          </label>
+          <textarea rows="4"
+            class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:border-[#AB9364] focus:ring-2 focus:ring-[#AB9364]/50 outline-none"
+            placeholder="Explique ton projet..."></textarea>
+        </div>
+
+        <!-- BUTTON -->
+        <div class="mt-8">
+          <button type="submit"
+            class="w-full bg-[#AB9364] hover:bg-[#8B7344] text-white font-bold py-3 rounded-lg transition transform hover:scale-105">
+            
+            Envoyer ma candidature
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<app-galerie></app-galerie>
+
+<app-faq></app-faq>
+
+
+
+
+
+
+
+
+
+
+<!-- 🔥 MODAL VIDEO -->
+<div *ngIf="isVideoOpen" 
+     (click)="closeVideo()"
+     class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm px-4">
+
+  <!-- CONTENU -->
+  <div class="relative w-full max-w-4xl" (click)="$event.stopPropagation()">
+
+    <!-- CLOSE -->
+    <button (click)="closeVideo()" 
+      class="absolute -top-12 right-0 text-white text-3xl hover:text-[#AB9364]">
+      ✕
+    </button>
+
+    <!-- VIDEO -->
+    <div class="relative w-full pb-[56.25%] rounded-xl overflow-hidden shadow-2xl">
+      <video
+    class="absolute top-0 left-0 w-full h-full object-cover"
+    src="images/jeny.MP4"
+    controls
+    playsinline
+    preload="metadata"
+    poster="images/thumbnail"
+  ></video>
+
+    </div>
+
+  </div>
+</div>
+</div>
