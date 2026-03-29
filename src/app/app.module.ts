@@ -11,6 +11,7 @@ import { GalerieComponent } from './client/galerie/galerie.component';
 import { FormationsComponent } from './client/formations/formations.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './client/about/about.component';
+import { ContactComponent } from './client/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AboutComponent } from './client/about/about.component';
     FaqComponent,
     GalerieComponent,
     FormationsComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
