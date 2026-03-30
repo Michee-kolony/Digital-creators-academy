@@ -371,64 +371,66 @@
 
 
 
-
-
-
-
-<!-- 🔥 MODAL VIDEO - DESIGN AMÉLIORÉ -->
-<div *ngIf="isVideoOpen" 
+<!-- 🔥 MODAL VIDEO ULTRA MODERNE -->
+<div *ngIf="isVideoOpen"
      (click)="closeVideo()"
-     class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md px-4 transition-all duration-300 animate-fadeIn">
+     class="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-lg px-4">
 
-  <!-- CONTENU AVEC ANIMATION -->
-  <div class="relative w-full max-w-5xl mx-4 transform transition-all duration-300 animate-scaleIn" 
+  <!-- CONTENEUR -->
+  <div class="relative w-full max-w-6xl"
        (click)="$event.stopPropagation()">
 
-    <!-- BOUTON CLOSE MODERNE -->
-    <button (click)="closeVideo()" 
-      class="absolute -top-12 right-0 md:-right-12 md:top-0 text-white/80 hover:text-white text-2xl md:text-3xl transition-all duration-300 hover:scale-110 hover:rotate-90 z-10"
-      aria-label="Fermer la vidéo">
-      <svg class="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+    <!-- 🔥 BOUTON FERMER -->
+    <button (click)="closeVideo()"
+      class="absolute -top-14 right-0 md:right-[-50px] text-white bg-white/10 hover:bg-red-500 
+             backdrop-blur-md rounded-full p-3 transition-all duration-300 hover:scale-110 shadow-lg z-20">
+      
+      <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"/>
       </svg>
     </button>
 
-    <!-- CONTAINER VIDEO AVEC EFFET MODERNE -->
-    <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/50 bg-black/20 backdrop-blur-sm">
-      
-      <!-- BORDURE DÉCORATIVE -->
-      <div class="absolute inset-0 rounded-2xl border border-white/20 pointer-events-none z-10"></div>
-      
-      <!-- OVERLAY GRADIENT -->
-      <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none z-10"></div>
-      
-      <!-- LECTEUR VIDEO RESPONSIVE -->
-      <div class="relative w-full" style="padding-bottom: 56.25%">
-        <iframe 
+    <!-- 🔥 CARD VIDEO -->
+    <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-black border border-white/10">
+
+      <!-- Glow effect -->
+      <div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-red-500/20 via-transparent to-blue-500/20 pointer-events-none"></div>
+
+      <!-- VIDEO WRAPPER -->
+      <div class="relative w-full aspect-video">
+
+        <!-- 🔥 IFRAME OPTIMISÉ -->
+        <iframe
           class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/4aJkG8vvUJw?autoplay=1&rel=0&modestbranding=1&showinfo=0"
-          title="L'expérience après l'apprentissage"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
+          src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F26798421869793663%2F&show_text=false&width=560&t=0"
+          style="border:none;"
+          loading="lazy"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           allowfullscreen>
         </iframe>
+
       </div>
-      
-      <!-- INFO BARRE OPTIONNELLE -->
-      <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 z-20">
-        <p class="text-white text-sm md:text-base font-medium">
+
+      <!-- 🔥 OVERLAY INFO -->
+      <div class="absolute bottom-0 left-0 right-0 p-4 md:p-6 
+                  bg-gradient-to-t from-black/90 via-black/40 to-transparent">
+
+        <h3 class="text-white text-base md:text-lg font-semibold">
           🎬 L'expérience après l'apprentissage
+        </h3>
+
+        <p class="text-gray-300 text-xs md:text-sm mt-1">
+          Découvrez le résultat final en vidéo
         </p>
+
       </div>
-      
     </div>
-    
-    <!-- INDICATEUR OPTIONNEL -->
-    <div class="text-center mt-6 text-white/60 text-sm animate-fadeInUp">
-      Appuyez sur Échap pour fermer
+
+    <!-- 🔥 INDICATION -->
+    <div class="text-center mt-6 text-gray-400 text-sm">
+      Appuyez sur <span class="text-white font-semibold">Échap</span> pour fermer
     </div>
 
   </div>
-</div>
 </div>
