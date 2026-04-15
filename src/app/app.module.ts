@@ -12,6 +12,8 @@ import { FormationsComponent } from './client/formations/formations.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './client/about/about.component';
 import { ContactComponent } from './client/contact/contact.component';
+import { AuthComponent } from './admin/auth/auth.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { ContactComponent } from './client/contact/contact.component';
     GalerieComponent,
     FormationsComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

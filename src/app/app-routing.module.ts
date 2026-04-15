@@ -5,6 +5,7 @@ import { AccueilComponent } from './client/accueil/accueil.component';
 import { FormationsComponent } from './client/formations/formations.component';
 import { AboutComponent } from './client/about/about.component';
 import { ContactComponent } from './client/contact/contact.component';
+import { AuthComponent } from './admin/auth/auth.component';
 
 const routes: Routes = [
   {path:'',  redirectTo: 'academy', pathMatch: 'full'},
@@ -16,7 +17,8 @@ const routes: Routes = [
       {path:'a-propos', component: AboutComponent},
       {path:'contact', component: ContactComponent}
     ]
-  }
+  },
+  {path:'auth_for_admin', component: AuthComponent}
 ];
 
 @NgModule({
