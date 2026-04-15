@@ -14,6 +14,10 @@ import { AboutComponent } from './client/about/about.component';
 import { ContactComponent } from './client/contact/contact.component';
 import { AuthComponent } from './admin/auth/auth.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AdminComponent } from './admin/admin/admin.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { PreinscriptionComponent } from './admin/preinscription/preinscription.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,13 +30,17 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormationsComponent,
     AboutComponent,
     ContactComponent,
-    AuthComponent
+    AuthComponent,
+    AdminComponent,
+    DashboardComponent,
+    PreinscriptionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

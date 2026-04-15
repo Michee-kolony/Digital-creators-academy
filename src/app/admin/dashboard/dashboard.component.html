@@ -1,0 +1,266 @@
+<div class="p-4 md:p-6 lg:p-8 min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 rounded-xl">
+  <!-- Header Section -->
+  <div class="mb-8">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2">Dashboard Administrateur</h1>
+    <p class="text-blue-200">Bienvenue dans votre espace de gestion</p>
+  </div>
+
+  <!-- Stats Cards Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8">
+    <!-- Carte Étudiants Inscrits -->
+    <div class="relative overflow-hidden backdrop-blur-lg bg-white/10 rounded-2xl shadow-xl border border-white/20 hover:scale-105 transition-transform duration-300">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full -mr-16 -mt-16"></div>
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-4">
+          <div class="p-3 bg-blue-500/30 rounded-xl">
+            <i class="fas fa-graduation-cap text-2xl text-blue-300"></i>
+          </div>
+          <span class="text-3xl font-bold text-white">1,234</span>
+        </div>
+        <h3 class="text-white font-semibold mb-1">Étudiants Inscrits</h3>
+        <p class="text-blue-200 text-sm">+12% cette semaine</p>
+      </div>
+      <div class="h-1 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+    </div>
+
+    <!-- Carte Demandes Préinscription -->
+    <div class="relative overflow-hidden backdrop-blur-lg bg-white/10 rounded-2xl shadow-xl border border-white/20 hover:scale-105 transition-transform duration-300">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-yellow-500/20 rounded-full -mr-16 -mt-16"></div>
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-4">
+          <div class="p-3 bg-yellow-500/30 rounded-xl">
+            <i class="fas fa-file-alt text-2xl text-yellow-300"></i>
+          </div>
+          <span class="text-3xl font-bold text-white">256</span>
+        </div>
+        <h3 class="text-white font-semibold mb-1">Demandes Préinscription</h3>
+        <p class="text-blue-200 text-sm">8 nouvelles aujourd'hui</p>
+      </div>
+      <div class="h-1 bg-gradient-to-r from-yellow-400 to-yellow-600"></div>
+    </div>
+
+    <!-- Carte Étudiants Validés -->
+    <div class="relative overflow-hidden backdrop-blur-lg bg-white/10 rounded-2xl shadow-xl border border-white/20 hover:scale-105 transition-transform duration-300">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-green-500/20 rounded-full -mr-16 -mt-16"></div>
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-4">
+          <div class="p-3 bg-green-500/30 rounded-xl">
+            <i class="fas fa-check-circle text-2xl text-green-300"></i>
+          </div>
+          <span class="text-3xl font-bold text-white">987</span>
+        </div>
+        <h3 class="text-white font-semibold mb-1">Étudiants Validés</h3>
+        <p class="text-blue-200 text-sm">89% du total</p>
+      </div>
+      <div class="h-1 bg-gradient-to-r from-green-400 to-green-600"></div>
+    </div>
+
+    <!-- Carte Cours Lancés -->
+    <div class="relative overflow-hidden backdrop-blur-lg bg-white/10 rounded-2xl shadow-xl border border-white/20 hover:scale-105 transition-transform duration-300">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/20 rounded-full -mr-16 -mt-16"></div>
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-4">
+          <div class="p-3 bg-purple-500/30 rounded-xl">
+            <i class="fas fa-play-circle text-2xl text-purple-300"></i>
+          </div>
+          <span class="text-3xl font-bold text-white">42</span>
+        </div>
+        <h3 class="text-white font-semibold mb-1">Cours Lancés</h3>
+        <p class="text-blue-200 text-sm">5 nouveaux ce mois</p>
+      </div>
+      <div class="h-1 bg-gradient-to-r from-purple-400 to-purple-600"></div>
+    </div>
+  </div>
+
+  <!-- Charts Section -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+    <!-- Graphique Évolution des inscriptions -->
+    <div class="backdrop-blur-lg bg-white/10 rounded-2xl shadow-xl border border-white/20 p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-white font-semibold text-lg">Évolution des inscriptions</h3>
+        <select class="bg-white/20 text-white rounded-lg px-3 py-1 text-sm border border-white/30">
+          <option class="bg-gray-800">Cette semaine</option>
+          <option class="bg-gray-800">Ce mois</option>
+          <option class="bg-gray-800">Cette année</option>
+        </select>
+      </div>
+      <div class="h-64 flex items-center justify-center">
+        <div class="w-full h-full flex items-end space-x-2">
+          <div class="flex-1 flex flex-col items-center">
+            <div class="w-full bg-blue-500/50 rounded-t-lg" style="height: 120px;"></div>
+            <span class="text-white text-xs mt-2">Lun</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center">
+            <div class="w-full bg-blue-500/50 rounded-t-lg" style="height: 85px;"></div>
+            <span class="text-white text-xs mt-2">Mar</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center">
+            <div class="w-full bg-blue-500/50 rounded-t-lg" style="height: 150px;"></div>
+            <span class="text-white text-xs mt-2">Mer</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center">
+            <div class="w-full bg-blue-500/50 rounded-t-lg" style="height: 200px;"></div>
+            <span class="text-white text-xs mt-2">Jeu</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center">
+            <div class="w-full bg-blue-500/50 rounded-t-lg" style="height: 170px;"></div>
+            <span class="text-white text-xs mt-2">Ven</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center">
+            <div class="w-full bg-blue-500/50 rounded-t-lg" style="height: 140px;"></div>
+            <span class="text-white text-xs mt-2">Sam</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center">
+            <div class="w-full bg-blue-500/50 rounded-t-lg" style="height: 110px;"></div>
+            <span class="text-white text-xs mt-2">Dim</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Répartition par filière -->
+    <div class="backdrop-blur-lg bg-white/10 rounded-2xl shadow-xl border border-white/20 p-6">
+      <h3 class="text-white font-semibold text-lg mb-4">Répartition par filière</h3>
+      <div class="space-y-4">
+        <div>
+          <div class="flex justify-between text-white text-sm mb-1">
+            <span>Informatique</span>
+            <span>45%</span>
+          </div>
+          <div class="w-full bg-white/20 rounded-full h-2">
+            <div class="bg-gradient-to-r from-blue-400 to-blue-600 rounded-full h-2" style="width: 45%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-white text-sm mb-1">
+            <span>Marketing Digital</span>
+            <span>25%</span>
+          </div>
+          <div class="w-full bg-white/20 rounded-full h-2">
+            <div class="bg-gradient-to-r from-green-400 to-green-600 rounded-full h-2" style="width: 25%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-white text-sm mb-1">
+            <span>Design Graphique</span>
+            <span>20%</span>
+          </div>
+          <div class="w-full bg-white/20 rounded-full h-2">
+            <div class="bg-gradient-to-r from-purple-400 to-purple-600 rounded-full h-2" style="width: 20%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-white text-sm mb-1">
+            <span>Gestion d'Entreprise</span>
+            <span>10%</span>
+          </div>
+          <div class="w-full bg-white/20 rounded-full h-2">
+            <div class="bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full h-2" style="width: 10%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recent Activities & Top Courses -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <!-- Activités Récentes -->
+    <div class="backdrop-blur-lg bg-white/10 rounded-2xl shadow-xl border border-white/20 p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-white font-semibold text-lg">Activités Récentes</h3>
+        <button class="text-blue-300 hover:text-white text-sm transition">Voir tout</button>
+      </div>
+      <div class="space-y-4">
+        <div class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition">
+          <div class="p-2 bg-green-500/30 rounded-lg">
+            <i class="fas fa-user-plus text-green-300"></i>
+          </div>
+          <div class="flex-1">
+            <p class="text-white text-sm">Nouvel étudiant inscrit</p>
+            <p class="text-blue-200 text-xs">Thomas Martin - Informatique</p>
+          </div>
+          <span class="text-blue-300 text-xs">Il y a 5 min</span>
+        </div>
+        <div class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition">
+          <div class="p-2 bg-yellow-500/30 rounded-lg">
+            <i class="fas fa-file-signature text-yellow-300"></i>
+          </div>
+          <div class="flex-1">
+            <p class="text-white text-sm">Nouvelle demande préinscription</p>
+            <p class="text-blue-200 text-xs">Sophie Dubois - Marketing</p>
+          </div>
+          <span class="text-blue-300 text-xs">Il y a 15 min</span>
+        </div>
+        <div class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition">
+          <div class="p-2 bg-blue-500/30 rounded-lg">
+            <i class="fas fa-video text-blue-300"></i>
+          </div>
+          <div class="flex-1">
+            <p class="text-white text-sm">Nouveau cours lancé</p>
+            <p class="text-blue-200 text-xs">React.js Avancé - Démarrage le 01/12</p>
+          </div>
+          <span class="text-blue-300 text-xs">Il y a 2h</span>
+        </div>
+        <div class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition">
+          <div class="p-2 bg-purple-500/30 rounded-lg">
+            <i class="fas fa-check-circle text-purple-300"></i>
+          </div>
+          <div class="flex-1">
+            <p class="text-white text-sm">Dossier validé</p>
+            <p class="text-blue-200 text-xs">Lucas Bernard - Design Graphique</p>
+          </div>
+          <span class="text-blue-300 text-xs">Il y a 3h</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cours Populaires -->
+    <div class="backdrop-blur-lg bg-white/10 rounded-2xl shadow-xl border border-white/20 p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-white font-semibold text-lg">Cours les plus suivis</h3>
+        <i class="fas fa-fire text-orange-400"></i>
+      </div>
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+            <i class="fab fa-react text-white"></i>
+          </div>
+          <div class="flex-1">
+            <p class="text-white font-medium">React.js - Développement Web</p>
+            <p class="text-blue-200 text-xs">1,234 étudiants</p>
+          </div>
+          <div class="text-right">
+            <span class="text-yellow-300">⭐⭐⭐⭐⭐</span>
+            <p class="text-blue-200 text-xs">4.8 (342 avis)</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-600 rounded-lg flex items-center justify-center">
+            <i class="fab fa-python text-white"></i>
+          </div>
+          <div class="flex-1">
+            <p class="text-white font-medium">Python - Data Science</p>
+            <p class="text-blue-200 text-xs">987 étudiants</p>
+          </div>
+          <div class="text-right">
+            <span class="text-yellow-300">⭐⭐⭐⭐⭐</span>
+            <p class="text-blue-200 text-xs">4.9 (267 avis)</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center">
+            <i class="fab fa-figma text-white"></i>
+          </div>
+          <div class="flex-1">
+            <p class="text-white font-medium">UI/UX Design - Figma</p>
+            <p class="text-blue-200 text-xs">756 étudiants</p>
+          </div>
+          <div class="text-right">
+            <span class="text-yellow-300">⭐⭐⭐⭐⭐</span>
+            <p class="text-blue-200 text-xs">4.7 (198 avis)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
